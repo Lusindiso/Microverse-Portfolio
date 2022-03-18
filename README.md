@@ -2,7 +2,7 @@
 
 # Project Name
 
-> # Portfolio Project
+> # Microverse Student Portfolio
 
 ## Built With
 
@@ -11,6 +11,14 @@
 ## Getting Started
 
 Download or clone this repo to your local machine.
+
+### Prerequisites
+
+- node
+
+### Setup
+
+- run: npm install
 
 ## Authors
 
