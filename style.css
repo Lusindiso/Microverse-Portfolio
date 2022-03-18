@@ -126,6 +126,7 @@ a:link {
 }
 
 .works-project__languages {
+  list-style: none;
   display: flex;
   align-items: center;
   margin: 1rem 0 2.5rem 0;
@@ -138,7 +139,10 @@ a:link {
   margin-right: 1rem;
 }
 
-.works-project__btn {
+.btn,
+.btn:link {
+  outline: none;
+  text-decoration: none;
   font-size: 1.7rem;
   font-weight: 600;
   width: 100%;
@@ -175,5 +179,19 @@ a:link {
     line-height: 2.4rem;
     font-weight: 400;
     max-width: 35rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .works {
+    margin: 0 1.5rem;
+  }
+
+  .header-section {
+    padding: 0 1.5rem;
+  }
+
+  .navbar {
+    padding: 0 0.5rem;
   }
 }
