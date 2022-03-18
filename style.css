@@ -189,9 +189,30 @@ a:link {
 }
 
 .about-languages__heading {
-  font-size: 2.5rem;
-  font-weight: 600;
-  text-align: center;
+  font-size: 3rem;
+  margin: 3rem 0;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-frameworks__heading {
+  font-size: 3rem;
+  margin: 3rem 0;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-skills__heading {
+  font-size: 3rem;
+  margin: 3rem 0;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .works-project__languages--item {
@@ -234,6 +255,13 @@ a:link {
   font-weight: 600;
   padding: 1rem 2rem;
   background-color: #ff6b00;
+}
+
+.about__icon {
+  margin-left: -2.8rem;
+  margin-right: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 @media only screen and (max-width: 480px) {
