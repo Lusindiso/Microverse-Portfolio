@@ -47,3 +47,53 @@ body {
 		padding-right: 1.2rem;
 	}
 }
+
+.header {
+	background: #1c1a19;
+	padding: 10rem 2.2rem;
+}
+
+@media only screen and (max-width: 480px) {
+	.header {
+		background: #1c1a19;
+		display: flex;
+		flex-direction: column;
+		padding: 10rem 2.2rem;
+		background-image: url("../img/Illustration-header.svg");
+		background-repeat: no-repeat;
+		background-position: 11rem 3rem;
+	}
+}
+
+.header__social {
+	display: flex;
+}
+
+.heading__primary {
+	font-size: 5.4rem;
+	font-weight: 400;
+	color: #ff6b00;
+	line-height: 6.4rem;
+	letter-spacing: 0.37px;
+	max-width: 30rem;
+}
+
+.heading__secondary {
+	font-size: 2.4rem;
+	margin: 1.2rem 0;
+}
+
+.heading__about {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	margin-bottom: 2rem;
+}
+
+.header__icon {
+	padding: 0 1.2rem;
+}
+
+.header__icon i {
+	font-size: 2.5rem;
+	color: #dbd8d7;
+}
