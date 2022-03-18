@@ -109,3 +109,21 @@ a:link {
   font-size: 2.5rem;
   color: #dbd8d7;
 }
+
+.works {
+  display: grid;
+}
+
+@media only screen and (max-width: 480px) {
+  .works {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 480px);
+
+    margin: 0 2.2rem;
+  }
+
+  .works > * {
+    background-color: #ff6b00;
+    margin: 2rem 0;
+  }
+}
