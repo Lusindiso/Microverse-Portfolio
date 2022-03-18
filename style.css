@@ -141,6 +141,7 @@ a:link {
 .works-stories__story--heading {
   font-size: 3.2rem;
   font-weight: 500;
+  font-family: "crete round", serif;
   line-height: 4.4rem;
   margin: 1.4rem 0;
 }
@@ -187,6 +188,13 @@ a:link {
   display: flex;
   align-items: center;
   margin: 1rem 0 2.5rem 0;
+}
+
+.works-stories__btn--link {
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  background-color: #ff6b00;
 }
 
 .about-languages__heading {
