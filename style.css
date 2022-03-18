@@ -133,6 +133,10 @@ a:link {
   width: 100%;
 }
 
+.works-stories__photo--img:hover {
+  cursor: pointer;
+}
+
 .works-stories__story--heading {
   font-size: 3.2rem;
   font-weight: 500;
@@ -162,6 +166,10 @@ a:link {
   margin-right: 1rem;
 }
 
+.works-stories__languages--item:hover {
+  cursor: pointer;
+}
+
 .works-project {
   background-image: url(/img/img-project.jpg);
   background-position: center;
@@ -185,6 +193,10 @@ a:link {
   font-size: 1.5rem;
   background-color: rgba(255, 255, 255, 0.24);
   margin-right: 1rem;
+}
+
+.works-project__languages--item:hover {
+  cursor: pointer;
 }
 
 .btn,
