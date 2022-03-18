@@ -66,7 +66,7 @@ a:link {
     display: flex;
     flex-direction: column;
     padding: 10rem 2.2rem;
-    background-image: url("../img/Illustration-header.svg");
+    background-image: url("./img/Illustration-header.svg");
     background-repeat: no-repeat;
     background-position: 11rem 3rem;
   }
@@ -173,7 +173,7 @@ a:link {
 }
 
 .works-project {
-  background-image: url(/img/img-project.jpg);
+  background-image: url("./img/img-project.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -251,7 +251,7 @@ a:link {
 
 .about {
   display: grid;
-  background-image: url("../img/Frame.svg");
+  background-image: url("./img/Frame.svg");
   background-repeat: no-repeat;
   background-position: right 35rem;
 }
