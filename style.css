@@ -147,14 +147,19 @@ i {
   color: #dbd8d7;
 }
 
+/**** works ***/
 .works {
   display: grid;
-  padding: 0 14.1rem;
+  max-width: 110rem;
+  margin: 0 auto 13rem auto;
+  padding: 2.4rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem;
 }
 
 .works-stories {
-
   color: #091e42;
+  grid-column: 1/-1;
 }
 
 .works-stories__heading {
@@ -212,14 +217,19 @@ i {
 }
 
 .works-project {
-  background-image: url("./img/img-project.jpg");
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 35rem;
+  min-height: 36.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .works-project > *:not(:last-child) {
-  padding: 0 1.5rem;
+  padding: 0 1.6rem;
 }
 
 .works-project__languages {
@@ -229,12 +239,35 @@ i {
   margin: 1rem 0 2.5rem 0;
 }
 
+.works-project__heading {
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  margin-top: 10rem;
+  max-width: 30rem;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.works-project__paragraph {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  max-width: 35rem;
+}
+
 .works-stories__btn--link {
   font-size: 1.7rem;
   font-weight: 600;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   background-color: #ff6b00;
 }
+
+@media only screen and (max-width:476px) {
+  .works-project {
+    background-image: url("./img/img-project.jpg");
+  }
+}
+
 
 .about {
   display: grid;
@@ -282,6 +315,23 @@ i {
   cursor: pointer;
 }
 
+.works-project__btn {
+  display: none;
+}
+
+/*** works project background ***/
+.works-project-1{
+  background-image: url('./img/project-1.jpg');
+}
+.works-project-2{}
+.works-project-3{}
+.works-project-4{
+  background-image: url('./img/project-4.jpg');
+}
+.works-project-5{}
+.works-project-6{}
+
+
 .btn,
 .btn:link {
   outline: none;
@@ -327,20 +377,8 @@ i {
     margin: 2rem 0;
   }
 
-  .works-project__heading {
-    font-size: 3.2rem;
-    line-height: 4.4rem;
-    margin-top: 10rem;
-    max-width: 30rem;
-    font-weight: 400;
-    padding: 1rem 0;
-  }
-
-  .works-project__paragraph {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    font-weight: 400;
-    max-width: 35rem;
+  .works-project__btn {
+    display: block;
   }
 
   .about {
@@ -466,6 +504,10 @@ i {
   margin: 0.8rem auto;
 }
 
+.footer__bar {
+  display: none;
+}
+
 @media only screen and (max-width: 576px) {
   .form__heading {
     max-width: 32.7rem;
@@ -490,7 +532,7 @@ i {
   }
 
   .footer__bar {
-    display: none;
+    display: block;
   }
 }
 
