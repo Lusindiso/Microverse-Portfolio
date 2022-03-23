@@ -363,8 +363,8 @@ a:link {
   }
 }
 
-.form__heading { 
-  color:#172b4d;
+.form__heading {
+  color: #172b4d;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
@@ -382,12 +382,12 @@ a:link {
   }
 
   .form__list {
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
 
-  .form__list--item >* {
-    width:100%;
+  .form__list--item > * {
+    width: 100%;
   }
 
   .form__list--item input,
@@ -413,13 +413,13 @@ a:link {
     color: #3c3a39;
     margin-bottom: 2.4rem;
     outline: none;
-    background:#fbf8f7;
+    background: #fbf8f7;
     height: 11.4rem;
   }
 }
 
 .form {
-  border-bottom: 1px solid #DFE1E6;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .form__list--item button {
