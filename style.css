@@ -361,7 +361,6 @@ a:link {
   .about-me__heading {
     font-size: 5.5rem;
   }
-
 }
 
 .form__heading { 
@@ -404,20 +403,19 @@ a:link {
     outline: none;
   }
 
-   .form__list--item textarea, 
+  .form__list--item textarea, 
   .form__list--item textarea:focus {
-      font-size: 1.5rem;
-      border-style: none;
-      font-weight: 400;
-      line-height: 2.4rem;
-      padding: 1.2rem;
-      color: #3C3A39;
-      margin-bottom: 2.4rem;
-      outline: none;
-      background:#FBF8F7;
-      height: 11.4rem;
-    }
-
+    font-size: 1.5rem;
+    border-style: none;
+    font-weight: 400;
+    line-height: 2.4rem;
+    padding: 1.2rem;
+    color: #3C3A39;
+    margin-bottom: 2.4rem;
+    outline: none;
+    background:#FBF8F7;
+    height: 11.4rem;
+  }
 }
 
 .form {
