@@ -250,10 +250,31 @@ don’t hestiate to contact me.
 <footer class="contact-form">
   <form action="https://formspree.io/f/mgedzjjn" method="POST" class="form">
     <h3 class="form__heading">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
-    <ul class="form__list">
-      <li class="form__list--item">
+    
+    <ul class="form__list form__list--small">
+      <li class="form__list--item full-name">
         <input type="text" name="name" maxlength="30" placeholder="Full name" required>
       </li>
+      <li class="form__list--item">
+        <input type="email" name="email" placeholder="Email address" required>
+      </li>
+      <li class="form__list--item">
+        <textarea name="message" cols="30" rows="10" placeholder="Enter text here" required></textarea>
+      </li>
+      <li class="form__list--item">
+        <button class="btn" type="submit">Get in touch</button>
+      </li>
+    </ul>
+    
+    <ul class="form__list form__list--big">
+      <div class="fullname">
+        <li class="form__list--item full-name">
+          <input type="text" name="first-name" maxlength="30" placeholder="first name" required>
+        </li>
+        <li class="form__list--item last-name">
+          <input type="text" name="last-name" maxlength="30" placeholder="last name" required>
+        </li>
+      </div>
       <li class="form__list--item">
         <input type="email" name="email" placeholder="Email address" required>
       </li>

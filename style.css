@@ -398,6 +398,7 @@ i {
   }
 }
 
+/*** Footer ***/
 .form__heading {
   color: #172b4d;
   font-size: 32px;
@@ -406,55 +407,39 @@ i {
   text-align: center;
 }
 
-@media only screen and (max-width: 476px) {
-  .contact-form > * {
-    padding: 0 2.4rem;
-  }
-
-  .form__heading {
-    max-width: 32.7rem;
-    margin: 12rem auto 5rem auto;
-  }
-
-  .form__list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .form__list--item > * {
-    width: 100%;
-  }
-
-  .form__list--item input,
-  .form__list--item input:focus {
-    font-size: 1.5rem;
-    border-style: none;
-    font-weight: 400;
-    line-height: 2.4rem;
-    padding: 1.4rem 1.6rem;
-    color: #979493;
-    border-bottom: 1px solid #dbd8d7;
-    margin-bottom: 2.4rem;
-    outline: none;
-  }
-
-  .form__list--item textarea,
-  .form__list--item textarea:focus {
-    font-size: 1.5rem;
-    border-style: none;
-    font-weight: 400;
-    line-height: 2.4rem;
-    padding: 1.2rem;
-    color: #3c3a39;
-    margin-bottom: 2.4rem;
-    outline: none;
-    background: #fbf8f7;
-    height: 11.4rem;
-  }
-}
-
 .form {
   border-bottom: 1px solid #dfe1e6;
+}
+
+.form__list--small {
+  display: none;
+}
+
+.form__list--item input,
+.form__list--item input:focus {
+  font-size: 1.5rem;
+  border-style: none;
+  font-weight: 400;
+  line-height: 2.4rem;
+  padding: 1.4rem 1.6rem;
+  color: #979493;
+  border-bottom: 1px solid #dbd8d7;
+  margin-bottom: 2.4rem;
+  outline: none;
+}
+
+.form__list--item textarea,
+.form__list--item textarea:focus {
+  font-size: 1.5rem;
+  border-style: none;
+  font-weight: 400;
+  line-height: 2.4rem;
+  padding: 1.2rem;
+  color: #3c3a39;
+  margin-bottom: 2.4rem;
+  outline: none;
+  background: #fbf8f7;
+  height: 11.4rem;
 }
 
 .form__list--item button {
@@ -482,11 +467,42 @@ i {
 }
 
 @media only screen and (max-width: 576px) {
+  .form__heading {
+    max-width: 32.7rem;
+    margin: 12rem auto 5rem auto;
+  }
+
+  .contact-form > * {
+    padding: 0 2.4rem;
+  }
+
+  .form__list--item > * {
+    width: 100%;
+  }
+
+  .fullname {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .fullname .last-name {
+    margin-left: 1rem;
+  }
+
   .footer__bar {
     display: none;
   }
 }
 
-@media only screen and (max-width: 476px) {
 
+@media only screen and (max-width: 476px) {
+  
+
+  .form__list--small {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__list--big {
+    display: none;
+  }
 }
