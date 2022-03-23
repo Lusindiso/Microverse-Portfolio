@@ -364,7 +364,7 @@ a:link {
 }
 
 .form__heading { 
-  color:#172B4D;
+  color:#172b4d;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
@@ -372,7 +372,7 @@ a:link {
 }
 
 @media only screen and (max-width: 480px) {
-  .contact-form >*{
+  .contact-form > * {
     padding: 0 2.4rem;
   }
 
@@ -390,7 +390,7 @@ a:link {
     width:100%;
   }
 
-  .form__list--item input, 
+  .form__list--item input,
   .form__list--item input:focus {
     font-size: 1.5rem;
     border-style: none;
@@ -398,22 +398,22 @@ a:link {
     line-height: 2.4rem;
     padding: 1.4rem 1.6rem;
     color: #979493;
-    border-bottom: 1px solid #DBD8D7;
+    border-bottom: 1px solid #dbd8d7;
     margin-bottom: 2.4rem;
     outline: none;
   }
 
-  .form__list--item textarea, 
+  .form__list--item textarea,
   .form__list--item textarea:focus {
     font-size: 1.5rem;
     border-style: none;
     font-weight: 400;
     line-height: 2.4rem;
     padding: 1.2rem;
-    color: #3C3A39;
+    color: #3c3a39;
     margin-bottom: 2.4rem;
     outline: none;
-    background:#FBF8F7;
+    background:#fbf8f7;
     height: 11.4rem;
   }
 }
@@ -429,11 +429,11 @@ a:link {
   color: #fff;
 }
 
-.contact-form .footer__social{
+.contact-form .footer__social {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 2.5rem 0 2.3rem 0
+  margin: 2.5rem 0 2.3rem 0;
 }
 
 .footer__bar img {
@@ -441,4 +441,3 @@ a:link {
   width: 36%;
   margin: 0.8rem auto;
 }
-
