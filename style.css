@@ -17,43 +17,72 @@ body {
   color: #fff;
 }
 
+ul {
+  list-style: none;
+}
+
 a,
 a:link {
   text-decoration: none;
   color: #fff;
 }
 
+
+/*** Navigation bar ***/
+.header {
+  background-color: #3e3c3c;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.2rem;
+  max-width: 110rem;
+  margin: 0 auto;
   height: 7.2rem;
-  background-color: #3e3c3c;
+  padding: 0 2.4rem;
 }
 
 .navbar__logo {
   font-size: 2rem;
-  padding-left: 2rem;
+  font-weight: 700;
 }
 
-.navbar__menu {
+.navbar__menu--small {
   display: none;
 }
 
-@media only screen and (max-width: 480px) {
-  .navbar__logo {
-    font-size: 1.8rem;
-    padding-left: 1.2rem;
-  }
+.nav-bar__menu--big {
+  display: flex;
+  align-items: center;
+}
 
-  .navbar__menu {
+.menu__item--link {
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar__menu--small {
     display: block;
     font-size: 2.5rem;
-    padding-right: 1.2rem;
     list-style: none;
   }
+
+  .nav-bar__menu--big {
+    display: none;
+  }
 }
+
+@media only screen and (max-width:376px) {
+  .navbar {
+    padding: 0 1.5rem;
+  }
+}
+
+/*** Header-Section ***/
 
 .header-section {
   background: #1c1a19;
@@ -112,9 +141,11 @@ a:link {
 
 .works {
   display: grid;
+  padding: 0 14.1rem;
 }
 
 .works-stories {
+
   color: #091e42;
 }
 
@@ -197,6 +228,14 @@ a:link {
   background-color: #ff6b00;
 }
 
+.about {
+  display: grid;
+  background-image: url("./img/Frame.svg");
+  background-repeat: no-repeat;
+  background-position: right 35rem;
+  background-color: #262626;
+}
+
 .about-languages__heading {
   font-size: 3rem;
   margin: 3rem 0;
@@ -249,13 +288,6 @@ a:link {
   background-color: #ff6b00;
 }
 
-.about {
-  display: grid;
-  background-image: url("./img/Frame.svg");
-  background-repeat: no-repeat;
-  background-position: right 35rem;
-}
-
 .about-me {
   padding-bottom: 20rem;
   border-bottom: 1px solid #fff;
@@ -305,7 +337,6 @@ a:link {
 
   .about {
     grid-template-columns: 1fr;
-    background-color: #262626;
     padding: 10rem 2.2rem;
     margin-top: 8rem;
   }
@@ -341,17 +372,13 @@ a:link {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 376px) {
   .works {
     margin: 0 1.5rem;
   }
 
   .header-section {
     padding: 0 1.5rem;
-  }
-
-  .navbar {
-    padding: 0 0.5rem;
   }
 
   .works-stories__heading {
@@ -434,10 +461,17 @@ a:link {
   flex-direction: row;
   justify-content: center;
   margin: 2.5rem 0 2.3rem 0;
+  color: #505F79;
 }
 
 .footer__bar img {
   display: block;
   width: 36%;
   margin: 0.8rem auto;
+}
+
+@media only screen and (max-width: 576px) {
+  
+}.footer__bar {
+  display: none;
 }
