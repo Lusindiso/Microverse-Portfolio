@@ -97,15 +97,15 @@ a:link {
   margin-bottom: 2rem;
 }
 
-.header-section__icon {
+.social__icon {
   padding: 0 1.2rem;
 }
 
-.header-section__icon a {
+.social__icon a {
   text-decoration: none;
 }
 
-.header-section__icon i {
+.social__icon i {
   font-size: 2.5rem;
   color: #dbd8d7;
 }
@@ -361,4 +361,83 @@ a:link {
   .about-me__heading {
     font-size: 5.5rem;
   }
+}
+
+.form__heading {
+  color: #172b4d;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .contact-form > * {
+    padding: 0 2.4rem;
+  }
+
+  .form__heading {
+    max-width: 32.7rem;
+    margin: 12rem auto 5rem auto;
+  }
+
+  .form__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__list--item > * {
+    width: 100%;
+  }
+
+  .form__list--item input,
+  .form__list--item input:focus {
+    font-size: 1.5rem;
+    border-style: none;
+    font-weight: 400;
+    line-height: 2.4rem;
+    padding: 1.4rem 1.6rem;
+    color: #979493;
+    border-bottom: 1px solid #dbd8d7;
+    margin-bottom: 2.4rem;
+    outline: none;
+  }
+
+  .form__list--item textarea,
+  .form__list--item textarea:focus {
+    font-size: 1.5rem;
+    border-style: none;
+    font-weight: 400;
+    line-height: 2.4rem;
+    padding: 1.2rem;
+    color: #3c3a39;
+    margin-bottom: 2.4rem;
+    outline: none;
+    background: #fbf8f7;
+    height: 11.4rem;
+  }
+}
+
+.form {
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.form__list--item button {
+  width: 13.1rem;
+  margin: 0 auto 12.4rem auto;
+  border: none;
+  color: #fff;
+}
+
+.contact-form .footer__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2.5rem 0 2.3rem 0;
+}
+
+.footer__bar img {
+  display: block;
+  width: 36%;
+  margin: 0.8rem auto;
 }
