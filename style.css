@@ -349,7 +349,7 @@ a:link {
   }
 
   /*** works project background ***/
-  .works-project:hover *{
+  .works-project:hover * {
     display: none;
   }
 
