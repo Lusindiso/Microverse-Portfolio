@@ -706,4 +706,13 @@ a:link {
   .mobile {
     display: none;
   }
+  
+  .first-name {
+    width: 50%;
+    margin-right: 3rem;
+  }
+
+  .last-name {
+    width: 50%;
+  }
 }
