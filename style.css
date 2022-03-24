@@ -364,18 +364,36 @@ a:link {
   .works-project__btn {
     display: none;
   }
+
   
   /*** works project background ***/
   .works-project-1{
     background-image: url('./img/project-1.jpg');
   }
-  .works-project-2{}
-  .works-project-3{}
+
+  .works-project-1 .works-project__btn {
+    display: block;
+  }
+
+  .works-project-1 > * {
+    display: none;
+  }
+
+  .works-project-2{
+    background-image: url('./img/project-2.jpg');
+  }
+  .works-project-3{
+    background-image: url('./img/project-3.jpg');
+  }
   .works-project-4{
     background-image: url('./img/project-4.jpg');
   }
-  .works-project-5{}
-  .works-project-6{}
+  .works-project-5{
+    background-image: url('./img/project-5.jpg');
+  }
+  .works-project-6{
+    background-image: url('./img/project-6.jpg');
+  }
   
 }
 
