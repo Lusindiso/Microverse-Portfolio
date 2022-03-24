@@ -505,14 +505,41 @@ a:link {
 /*** Footer ***/
 .form__heading {
   color: #172b4d;
-  font-size: 32px;
+  font-size: 4rem;
   font-weight: 700;
-  line-height: 44px;
-  text-align: center;
+  line-height: 5.2rem;
+  max-width: 45.5rem;
+  padding-right: 4rem;
 }
 
 .form {
   border-bottom: 1px solid #dfe1e6;
+  display: flex;
+  max-width: 110rem;
+  margin: 0 auto;
+  align-items: flex-start;
+  align-content: center;
+  margin-top: 13rem;
+}
+
+.fullname {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fullname .last-name {
+  margin-left: 3rem;
+}
+
+.form__list {
+  width: 100%;
+}
+.form__list--item {
+  width: 100%;
+}
+
+.form__list--item > * {
+  width: 100%;
 }
 
 .form__list--small {
@@ -548,7 +575,7 @@ a:link {
 
 .form__list--item button {
   width: 13.1rem;
-  margin: 0 auto 12.4rem auto;
+  margin-bottom: 12rem;
   border: none;
   color: #fff;
 }
@@ -575,26 +602,19 @@ a:link {
 }
 
 @media only screen and (max-width: 576px) {
+  .form{
+    flex-direction: column;
+  }
   .form__heading {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
     max-width: 32.7rem;
     margin: 12rem auto 5rem auto;
+    text-align: center;
   }
 
   .contact-form > * {
     padding: 0 2.4rem;
-  }
-
-  .form__list--item > * {
-    width: 100%;
-  }
-
-  .fullname {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .fullname .last-name {
-    margin-left: 1rem;
   }
 
   .footer__bar {
@@ -605,7 +625,9 @@ a:link {
 
 @media only screen and (max-width: 476px) {
   
-
+  .form__list--item button {
+    margin: 0 auto 12.4rem auto;
+  }
   .form__list--small {
     display: flex;
     flex-direction: column;
