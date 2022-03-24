@@ -103,6 +103,15 @@ a:link {
     background-repeat: no-repeat;
     background-position: 11rem 3rem;
   }
+
+  .works-stories__heading {
+    border-bottom: 1px solid black;
+  }
+
+  .works-stories__heading--container img{
+    display: none;
+  }
+  
 }
 
 
@@ -214,6 +223,24 @@ a:link {
   grid-column: 1/-1;
 }
 
+@media only screen and (min-width:476px) {
+  .works-stories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .works-stories .right{
+    width: 34%;
+    margin-left: 2rem;
+  }
+
+  .works-stories__photo{
+    width: 60%;
+  }
+  
+}
+
 .works-stories__heading {
   font-size: 4rem;
   font-family: "crete round", serif;
@@ -222,16 +249,23 @@ a:link {
   font-weight: 500;
   text-align: left;
   padding: 3.8rem 0;
-  border-bottom: 1px solid #212121;
   margin: 7.5rem 0;
+  width: 31.5rem;
 }
+
 
 .works-stories__photo--img {
   width: 100%;
+  margin-top: 2rem;
 }
 
 .works-stories__photo--img:hover {
   cursor: pointer;
+}
+
+.works-stories__heading--container{
+  display: flex;
+  align-items: center;
 }
 
 .works-stories__story--heading {
@@ -253,7 +287,7 @@ a:link {
   list-style: none;
   display: flex;
   align-items: center;
-  margin: 1rem 0 2.5rem 0;
+  margin: 2rem 0 3.5rem 0;
 }
 
 .works-stories__languages--item {
@@ -301,8 +335,8 @@ a:link {
 }
 
 .works-project__paragraph {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 2rem;
+  line-height: 2.8rem;
   font-weight: 400;
   max-width: 35rem;
 }
@@ -310,7 +344,7 @@ a:link {
 .works-stories__btn--link {
   font-size: 1.7rem;
   font-weight: 600;
-  padding: 0 2rem;
+  padding: 1.8rem 2.5rem;
   background-color: #ff6b00;
 }
 
@@ -361,6 +395,7 @@ a:link {
 }
 
 @media only screen and (min-width:476px) {
+
   .works-project__btn {
     display: none;
   }
@@ -433,6 +468,11 @@ a:link {
 }
 
 @media only screen and (max-width: 476px) {
+  .works-stories__story--paragraph {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
   .works {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, auto);
