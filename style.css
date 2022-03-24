@@ -145,6 +145,10 @@ a:link {
 
   .header-section__social {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3.6rem;
+    order: -1;
   }
 
   .heading__primary {
@@ -179,14 +183,6 @@ a:link {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right top;
-  }
-
-  .header-section__social {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 3.6rem;
-    order: -1;
   }
 }
 
