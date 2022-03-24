@@ -265,9 +265,29 @@
   </div>
 </section>
 <footer class="contact-form">
-  <form action="https://formspree.io/f/mgedzjjn" method="POST" class="form">
+  <form action="https://formspree.io/f/mgedzjjn" method="POST" class="form desktop">
     <h3 class="form__heading">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
-    
+    <ul class="form__list form__list--big">
+        <li class="form__list--item full-name">
+          <input type="text" name="first-name" maxlength="30" placeholder="First name" required>
+        </li>
+        <li class="form__list--item last-name">
+          <input type="text" name="last-name" maxlength="30" placeholder="Last name" required>
+        </li>
+      <li class="form__list--item">
+        <input type="email" name="email" placeholder="Email address" required>
+      </li>
+      <li class="form__list--item">
+        <textarea name="message" cols="30" rows="10" placeholder="Enter text here" required></textarea>
+      </li>
+      <li class="form__list--item">
+        <button class="btn" type="submit">Get in touch</button>
+      </li>
+    </ul>
+  </form>
+  
+  <form action="https://formspree.io/f/mgedzjjn" method="POST" class="form mobile">
+    <h3 class="form__heading">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
     <ul class="form__list form__list--small">
       <li class="form__list--item full-name">
         <input type="text" name="name" maxlength="30" placeholder="Full name" required>
@@ -282,27 +302,8 @@
         <button class="btn" type="submit">Get in touch</button>
       </li>
     </ul>
-    
-    <ul class="form__list form__list--big">
-      <h3 class="fullname">
-        <li class="form__list--item full-name">
-          <input type="text" name="first-name" maxlength="30" placeholder="first name" required>
-        </li>
-        <li class="form__list--item last-name">
-          <input type="text" name="last-name" maxlength="30" placeholder="last name" required>
-        </li>
-      <h3>
-      <li class="form__list--item">
-        <input type="email" name="email" placeholder="Email address" required>
-      </li>
-      <li class="form__list--item">
-        <textarea name="message" cols="30" rows="10" placeholder="Enter text here" required></textarea>
-      </li>
-      <li class="form__list--item">
-        <button class="btn" type="submit">Get in touch</button>
-      </li>
-    </ul>
   </form>
+
   <ul class="footer__social social">
       <li class="social__icon">
         <a href="#"><i class="fa-brands fa-github"></i></a>
