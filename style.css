@@ -28,8 +28,8 @@ a:link {
 }
 
 .social__icon i {
-    font-size: 1.8rem;
-    padding-bottom: 2.1rem;
+  font-size: 1.8rem;
+  padding-bottom: 2.1rem;
 }
 
 /*** Navigation bar ***/
@@ -64,7 +64,7 @@ a:link {
 .menu__item--link {
   font-size: 1.5rem;
   padding-left: 2rem;
-  font-family: Inter;
+  font-family: "inter" serif;
   font-weight: 600;
   line-height: 2rem;
 }
@@ -80,7 +80,7 @@ a:link {
   }
 }
 
-@media only screen and (max-width:376px) {
+@media only screen and (max-width: 376px) {
   .navbar {
     padding: 0 1.5rem;
   }
@@ -108,7 +108,7 @@ a:link {
     border-bottom: 1px solid black;
   }
 
-  .works-stories__heading--container img{
+  .works-stories__heading--container img {
     display: none;
   }
 }
@@ -127,7 +127,6 @@ a:link {
   margin: 1.2rem 0;
 }
 
-
 .heading__about {
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -142,8 +141,8 @@ a:link {
   .header-section .header-section__heading {
     max-width: 56rem;
     margin: 15rem 0 12rem 5rem;
-    
   }
+
   .header-section__social {
     display: flex;
   }
@@ -178,7 +177,7 @@ a:link {
     color: #dbd8d7;
   }
 
-  .header-section__bg{
+  .header-section__bg{ 
     width: 100rem;
     background-image: url('./img/Illustration-header.svg');
     background-repeat: no-repeat;
@@ -231,7 +230,7 @@ a:link {
   cursor: pointer;
 }
 
-.works-stories__heading--container{
+.works-stories__heading--container {
   display: flex;
   align-items: center;
 }
@@ -332,12 +331,12 @@ a:link {
     justify-content: space-between;
   }
 
-  .works-stories .right{
+  .works-stories .right {
     width: 34%;
     margin-left: 2rem;
   }
 
-  .works-stories__photo{
+  .works-stories__photo {
     width: 60%;
   }
   
@@ -346,7 +345,7 @@ a:link {
   }
 
   /*** works project background ***/
-  .works-project-1{
+  .works-project-1 {
     background-image: url('./img/project-1.jpg');
   }
 
@@ -358,34 +357,34 @@ a:link {
     display: none;
   }
 
-  .works-project-2{
+  .works-project-2 {
     background-image: url('./img/project-2.jpg');
   }
 
-  .works-project-3{
+  .works-project-3 {
     background-image: url('./img/project-3.jpg');
   }
 
-  .works-project-4{
+  .works-project-4 { 
     background-image: url('./img/project-4.jpg');
   }
 
-  .works-project-5{
+  .works-project-5 {
     background-image: url('./img/project-5.jpg');
   }
 
-  .works-project-6{
+  .works-project-6 {
     background-image: url('./img/project-6.jpg');
   }
 }
 
-@media only screen and (max-width:476px){
+@media only screen and (max-width:476px) {
   .works-stories__story--paragraph {
     font-size: 1.6rem;
     line-height: 2.4rem;
   }
 
-  .about{
+  .about {
     background-image: url('/img/Group.svg');
   }
 
