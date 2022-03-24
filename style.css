@@ -350,7 +350,6 @@ a:link {
 
 .about {
   display: grid;
-  background-image: url("./img/Frame.svg");
   background-repeat: no-repeat;
   background-position: right 35rem;
   background-color: #262626;
@@ -446,12 +445,35 @@ a:link {
   align-items: center;
   background-color: #ff6b00;
 }
+@media only screen and (min-width: 476px) {
+  .about-me__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 14.2rem;
+  }
 
-.about-me {
-  padding-bottom: 20rem;
-  border-bottom: 1px solid #fff;
-  margin-bottom: 15rem;
+  .about-me {
+    padding: 13rem 1rem;
+    width: 49%;
+  }
+
+  .about-bg {
+    width: 40%;
+    padding: 13rem 0;
+    background-image: url('./img/Frame.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    height: 50%;
+  }
+  
 }
+  .about-me {
+    padding-bottom: 20rem;
+  }
+
+
 
 .about-me__button--link {
   font-size: 1.7rem;
@@ -461,16 +483,62 @@ a:link {
 }
 
 .about__icon {
-  margin-left: -2.8rem;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   width: 2.5rem;
   height: 2.5rem;
+}
+
+.language-container {
+  border-top: 1px solid #fff;
+}
+
+@media only screen and (min-width: 476px) {
+  .language-container {
+    display: flex;
+    justify-content: space-between;
+    width: 110rem;
+    margin: 0 auto;
+    padding: 13rem 0;
+  }
+}
+.about ul {
+  list-style: none;
+  font-size: 2rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.about ul li {
+  line-height: 4.3rem;
+}
+
+.about-me__heading {
+  font-size: 7.2rem;
+  font-weight: 500;
+  color: #ff6b00;
+  letter-spacing: 0.37px;
+  line-height: 8.8rem;
+  margin-top: 1.5rem;
+  font-family: "crete round", serif;
+}
+
+.about-me__paragraph {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  margin: 3rem 0;
 }
 
 @media only screen and (max-width: 476px) {
   .works-stories__story--paragraph {
     font-size: 1.6rem;
     line-height: 2.4rem;
+  }
+
+  .about{
+    background-image: url('/img/Group.svg');
   }
 
   .works {
@@ -493,16 +561,6 @@ a:link {
     margin-top: 8rem;
   }
 
-  .about-me__heading {
-    font-size: 7.2rem;
-    font-weight: 500;
-    color: #ff6b00;
-    letter-spacing: 0.37px;
-    line-height: 8.8rem;
-    margin-top: 1.5rem;
-    font-family: "crete round", serif;
-  }
-
   .about-me__paragraph {
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -510,17 +568,9 @@ a:link {
   }
 
   .about ul {
-    list-style: none;
-    font-size: 2rem;
-    font-weight: 400;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .about ul li {
-    line-height: 4.3rem;
   }
 }
 
