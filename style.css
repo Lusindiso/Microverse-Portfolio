@@ -272,6 +272,10 @@ a:link {
   justify-content: flex-end;
 }
 
+.works-project:hover {
+  cursor: pointer;
+}
+
 .form__list--small {
   display: none;
 }
@@ -345,16 +349,16 @@ a:link {
   }
 
   /*** works project background ***/
-  .works-project-1 {
-    background-image: url('./img/project-1.jpg');
+  .works-project:hover *{
+    display: none;
   }
 
-  .works-project-1 .works-project__btn {
+  .works-project:hover .works-project__btn {
     display: block;
   }
 
-  .works-project-1 > * {
-    display: none;
+  .works-project-1 {
+    background-image: url('./img/project-1.jpg');
   }
 
   .works-project-2 {
@@ -588,15 +592,6 @@ a:link {
   margin-top: 13rem;
 }
 
-.fullname {
-  display: flex;
-  justify-content: space-between;
-}
-
-.fullname .last-name {
-  margin-left: 3rem;
-}
-
 .form__list {
   width: 100%;
 }
@@ -686,33 +681,5 @@ a:link {
 @media only screen and (max-width: 476px) {
   .form__list--item button {
     margin: 0 auto 12.4rem auto;
-  }
-
-  .form__list--small {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .form__list--big {
-    display: none;
-  }
-
-  .desktop {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 476px) {
-  .mobile {
-    display: none;
-  }
-
-  .first-name {
-    width: 50%;
-    margin-right: 3rem;
-  }
-
-  .last-name {
-    width: 50%;
   }
 }
