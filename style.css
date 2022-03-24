@@ -280,6 +280,10 @@ a:link {
   display: none;
 }
 
+.form__list--item > * {
+  width: 100%;
+}
+
 .works-project > *:not(:last-child) {
   padding: 0 1.6rem;
 }
@@ -602,10 +606,6 @@ a:link {
 }
 
 .form__list--item {
-  width: 100%;
-}
-
-.form__list--item > * {
   width: 100%;
 }
 
