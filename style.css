@@ -403,10 +403,6 @@ a:link {
     display: block;
   }
 
-  .works {
-    margin: 0 1.5rem;
-  }
-
   .works-stories__heading {
     font-size: 3.5rem;
   }
@@ -481,7 +477,7 @@ a:link {
     background-size: contain;
     background-position: right bottom;
     height: 50%;
-  } 
+  }
 }
 
 .about-me {
@@ -511,7 +507,6 @@ a:link {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
 }
 
 .about ul li {
@@ -533,7 +528,6 @@ a:link {
   line-height: 3.2rem;
   margin: 3rem 0;
 }
-
 
 @media only screen and (min-width: 476px) {
   .language-container {
@@ -662,7 +656,7 @@ a:link {
 }
 
 .footer__social i {
-  color: #505F79;
+  color: #505f79;
 }
 
 .footer__bar img {
@@ -676,10 +670,10 @@ a:link {
 }
 
 @media only screen and (max-width: 576px) {
-  .form{
+  .form {
     flex-direction: column;
   }
-  
+
   .form__heading {
     font-size: 3.2rem;
     line-height: 4.4rem;
