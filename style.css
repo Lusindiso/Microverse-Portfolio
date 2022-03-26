@@ -270,10 +270,12 @@ a:link {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	transition: all 0.3s;
 }
 
 .works-project:hover {
 	cursor: pointer;
+	transform: scale(1.03);
 }
 
 .form__list--small {
@@ -316,10 +318,11 @@ a:link {
 	padding: 1.8rem 2.5rem;
 	background-color: #ff6b00;
 	transition: all 0.3s;
+	backface-visibility: hidden;
 }
 
 .works-stories__btn--link:hover,
-.btn:hover {
+.works .btn:hover {
 	color: #f55800;
 	background: #fff5e1;
 	border: 1px solid #f55800;
@@ -473,6 +476,7 @@ a:link {
 	justify-content: center;
 	align-items: center;
 	background-color: #ff6b00;
+	transition: all 0.3s;
 }
 
 @media only screen and (min-width: 476px) {
@@ -508,6 +512,7 @@ a:link {
 	font-weight: 600;
 	padding: 1rem 2rem;
 	background-color: #ff6b00;
+	transition: all 0.3s;
 }
 
 .about__icon {
@@ -649,6 +654,14 @@ a:link {
 	border: none;
 	color: #fff;
 	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.form__list--item button:hover,
+.about-me__button--link:hover {
+	color: #f55800;
+	background: #fff5e1;
+	border: 1px solid #f55800;
 }
 
 .contact-form .footer__social {
@@ -696,12 +709,18 @@ a:link {
 
 input,
 textarea {
+	backface-visibility: hidden;
 	transition: all 0.5s;
 }
 
 input:hover,
 textarea:hover {
-	transform: translateX(3px);
+	transform: translateX(5px);
+}
+
+input:active,
+textarea:active {
+	transform: scale(1.05);
 }
 
 @media only screen and (max-width: 476px) {
