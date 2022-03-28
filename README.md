@@ -1,24 +1,22 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Portfolio
 
-# Project Name
+> This project represents my personal portfolio and will feature my personal informaton, and my most recent work and projects.
 
-> # Microverse Student Portfolio
+![screenshot](./desktop_screenshot.png)
 
 ## Built With
 
 - HTML and CSS
 
 ## Getting Started
+To run this project, you only need a computer with a browser (like Google Chrome, Mozilla Firefox, Microsoft Edge, Apple Safari, etc.) installed, and follow these steps:
 
-Download or clone this repo to your local machine.
+To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+1- Navigate to the button on the top right green "code" button.
+2- In the drop down menu choose "Download Zip".
+3- After extracting the files, you'll have my project on your local machine.
 
-- node
-
-### Setup
-
-- run: npm install
 
 ## Authors
 

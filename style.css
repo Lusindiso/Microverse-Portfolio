@@ -137,6 +137,10 @@ a:link {
   padding: 0 1.2rem;
 }
 
+.header-section__social {
+  display: flex;
+}
+
 @media only screen and (min-width: 476px) {
   .header-section .header-section__heading {
     max-width: 56rem;
@@ -144,7 +148,6 @@ a:link {
   }
 
   .header-section__social {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 3.6rem;
