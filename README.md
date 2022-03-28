@@ -13,7 +13,7 @@ https://lusindiso.github.io/Microverse-Portfolio/
 
 ## Live Demo
 
-[Portfolio Web Page](https://lusindiso.github.io/Microverse-Portfolio/))
+[Portfolio Web Page](https://lusindiso.github.io/Microverse-Portfolio/)
 
 ## Getting Started
 To run this project, you only need a computer with a browser (like Google Chrome, Mozilla Firefox, Microsoft Edge, Apple Safari, etc.) installed, and follow these steps:
