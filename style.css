@@ -88,8 +88,66 @@ a:link {
     width: 100%; 
     height: 100%; 
     overflow: auto; 
+    animation: dropdown .5s ease-in;
+    animation-direction: top;
+    transform-origin: top;
     background-color: #3C3A39;
   }
+
+  @keyframes dropdown {
+    0% {
+    transform: scaleY(0)
+    }
+    100% {
+    transform: scaleY(1)
+    }
+    }
+    .close {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    animation: dropdown 1s ease-in;
+    animation-direction: top;
+    transform-origin: top;
+    }
+    
+    .close-modal:hover {
+    cursor: pointer;
+    }
+    
+    .modal-menu {
+    padding-top: 2rem;
+    }
+    
+    .modal-menu__item {
+    margin: 2.5rem 2.4rem;
+    border-bottom: 1px solid #6F6C6B;
+    }
+    
+    .modal-menu__item--link {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #FFF5E1;
+    line-height: 4.4rem;
+    padding: 1.5rem;
+    }
+    
+    .modal__bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5.7rem;
+    background: #E5E5E5;
+    }
+    
+    .modal__bar img{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2%;
+    } 
 
 }
 
