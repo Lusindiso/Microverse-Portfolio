@@ -27,12 +27,31 @@
 			<nav class="navbar">
 				<a href="#" class="navbar__logo">Lusindiso Ntanjana</a>
 				<ul class="navbar__menu--small">
-					<li>
+					<li id="modal-btn">
 						<a href="#" class="menubar">
 							<i class="fa-solid fa-bars"></i>
 						</a>
 					</li>
 				</ul>
+				<div id="modal" class="modal">
+					<div class="close">
+						<img src="./img/close.svg" alt="close button" id="closeModal" class="close-modal">
+					</div>
+					<ul class="modal-menu">
+						<li class="modal-menu__item">
+							<a href="#portfolio" class="modal-menu__item--link modalLink">Portoflio</a>
+						</li>
+						<li class="modal-menu__item">
+							<a href="#about" class="modal-menu__item--link modalLink">About</a>
+						</li>
+						<li class="modal-menu__item">
+							<a href="#contact" class="modal-menu__item--link modalLink">Contact</a>
+						</li>
+					</ul>
+					<div class="modal__bar">
+						<img src="./img/Shape.svg" alt="" />
+					</div>
+				</div>
 				<ul class="nav-bar__menu--big">
 					<li class="menu__item">
 						<a href="#portfolio" class="menu__item--link">Portoflio</a>
@@ -325,5 +344,7 @@
 				<img src="./img/Shape.svg" alt="" />
 			</div>
 		</footer>
+		
+		<script src="./script.js"></script>
 	</body>
 </html>
