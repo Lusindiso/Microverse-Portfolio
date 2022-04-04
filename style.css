@@ -149,6 +149,10 @@ a:link {
   }
 }
 
+.modal {
+  display: none;
+}
+
 @media only screen and (max-width: 376px) {
   .navbar {
     padding: 0 1.5rem;
