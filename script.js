@@ -58,7 +58,6 @@ const data = {
 	}
 }
 
-
 let modal = document.getElementById("modal");
 
 let btn = document.getElementById("modal-btn");
@@ -87,12 +86,9 @@ modalLink.forEach(element => {
 
 /////// Popup window ///////
 
-
-
 let popUpModal = document.getElementById('popUpModal')
 let popUp = document.querySelectorAll('.popUp')
 let closePopUp = document.getElementById('closePopUp')
-
 
 popUp.forEach(element => {
 	element.onclick = function(event) {
@@ -103,8 +99,7 @@ popUp.forEach(element => {
 			document.querySelector('.pop-up__paragraph').innerHTML = data[uniqId].text;
 			document.querySelector('.pop-up__languages').innerHTML = data[uniqId].lang;
 			document.querySelector('.popUpImage').setAttribute('src', data[uniqId].image)
-		}
-		
+		}	
 	}
 }); 
 
