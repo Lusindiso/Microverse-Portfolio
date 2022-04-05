@@ -23,3 +23,27 @@ modalLink.forEach(element => {
 		}
 	}
 }); 
+
+/////// Popup window ///////
+
+
+let popUpModal = document.getElementById('popUpModal')
+let popUp = document.querySelectorAll('.popUp')
+let closePopUp = document.getElementById('closePopUp')
+
+
+popUp.forEach(element => {
+	element.onclick = function(event) {
+		if (event.target) {
+			popUpModal.style.display = "block";
+	
+		}
+		
+	}
+}); 
+
+closePopUp.onclick = function(event) {
+  if (event.target) {
+    popUpModal.style.display = "none";
+  }
+}
