@@ -444,28 +444,28 @@ a:link {
     display: block;
   }
 
-  .works-project-1 {
-    background-image: url("./img/project-1.jpg");
+  .works-project1 {
+    background-image: url("./img/project1.jpg");
   }
 
-  .works-project-2 {
-    background-image: url("./img/project-2.jpg");
+  .works-project2 {
+    background-image: url("./img/project2.jpg");
   }
 
-  .works-project-3 {
-    background-image: url("./img/project-3.jpg");
+  .works-project3 {
+    background-image: url("./img/project3.jpg");
   }
 
-  .works-project-4 {
-    background-image: url("./img/project-4.jpg");
+  .works-project4 {
+    background-image: url("./img/project4.jpg");
   }
 
-  .works-project-5 {
-    background-image: url("./img/project-5.jpg");
+  .works-project5 {
+    background-image: url("./img/project5.jpg");
   }
 
-  .works-project-6 {
-    background-image: url("./img/project-6.jpg");
+  .works-project6 {
+    background-image: url("./img/project6.jpg");
   }
 }
 
