@@ -327,7 +327,7 @@ a:link {
   padding: 0.5rem 1.2rem;
   font-size: 1.5rem;
   color: #091e42;
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
   margin-right: 1rem;
 }
 
@@ -502,11 +502,11 @@ a:link {
 .background {
   position: fixed;
   top: 0;
-  left:0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  background: url('./img/blur.png')
+  background: url('./img/blur.png');
 }
 
 .pop-up {
@@ -521,6 +521,7 @@ a:link {
 }
 
 .pop-up__project {
+  padding: 2.4rem 4rem;
   position: fixed;
   width: 70vw;
   height: 81vh;
@@ -535,75 +536,70 @@ a:link {
 .pop-up__close--btn {
   float: right;
   margin: 3rem 3rem;
-  }
-  
-  .pop-up__close--btn:hover {
+}
+
+.pop-up__close--btn:hover {
   cursor: pointer;
-  }
-  
-  .pop-up__project {
-  padding: 2.4rem 4rem;
-  }
-  
-  .pop-up__heading {
-  font-family: 'Crete Round' serif;
+}
+
+.pop-up__heading {
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 4rem;
-  }
-  
-  .pop-up__languages {
+}
+
+.pop-up__languages {
   display: flex;
   align-items: center;
   margin-top: 1rem;
-  }
-  
-  .pop-up__languages--item {
+}
+
+.pop-up__languages--item {
   font-weight: 500;
   line-height: 2rem;
   padding: 0.5rem 1.2rem;
   font-size: 1.5rem;
   color: #091e42;
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
   margin-right: 1rem;
-  }
-  
-  .pop-up__main {
+}
+
+.pop-up__main {
   display: flex;
   overflow: hidden;
   margin-top: 3rem;
-  }
-  
-  .pop-up__first {
+}
+
+.pop-up__first {
   width: 30vw;
-  }
-  
-  .pop-up__first img {
+}
+
+.pop-up__first img {
   width: 100%;
   max-height: 34rem;
-  }
-  
-  .pop-up__last {
+}
+
+.pop-up__last {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  }
-  
-  .pop-up__paragraph {
+}
+
+.pop-up__paragraph {
   margin-left: 5rem;
   max-width: 42.4rem;
-  font-family: Inter;
+  font-family: 'Inter', serif;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 4rem;
-  }
-  
-  .pop-up__btn--container {
+}
+
+.pop-up__btn--container {
   display: flex;
   margin-left: 5rem;
 }
 
-.pop-up__btn{
+.pop-up__btn {
   outline: none;
   font-size: 1.7rem;
   font-weight: 700;
@@ -644,7 +640,7 @@ a:link {
     margin-top: 3rem;
   }
 
-  .pop-up__btn{
+  .pop-up__btn {
     font-size: 1.7rem;
     margin-right: 0;
     margin-bottom: 0;
@@ -653,7 +649,7 @@ a:link {
   .pop-up__first {
     width: 100%;
   }
-} 
+}
 
 
 /*** About ***/
