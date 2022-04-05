@@ -615,6 +615,10 @@ a:link {
   margin-bottom: 1rem;
 }
 
+.pop-up__btn--container img {
+  margin-left: 1rem;
+}
+
 @media only screen and (max-width: 767px) {
   .pop-up__main {
     flex-direction: column;
