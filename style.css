@@ -532,6 +532,77 @@ a:link {
   color: #172b4d;
 }
 
+.pop-up__close--btn {
+  float: right;
+  margin: 3rem 3rem;
+  }
+  
+  .pop-up__close--btn:hover {
+  cursor: pointer;
+  }
+  
+  .pop-up__project {
+  padding: 2.4rem 4rem;
+  }
+  
+  .pop-up__heading {
+  font-family: 'Crete Round' serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 4rem;
+  }
+  
+  .pop-up__languages {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  }
+  
+  .pop-up__languages--item {
+  font-weight: 500;
+  line-height: 2rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.5rem;
+  color: #091e42;
+  border: 1px solid #8993A4;
+  margin-right: 1rem;
+  }
+  
+  .pop-up__main {
+  display: flex;
+  overflow: hidden;
+  margin-top: 3rem;
+  }
+  
+  .pop-up__first {
+  width: 30vw;
+  }
+  
+  .pop-up__first img {
+  width: 100%;
+  max-height: 34rem;
+  }
+  
+  .pop-up__last {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+  
+  .pop-up__paragraph {
+  margin-left: 5rem;
+  max-width: 42.4rem;
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 4rem;
+  }
+  
+  .pop-up__btn--container {
+  display: flex;
+  }
+
+
 /*** About ***/
 .about {
   display: grid;
