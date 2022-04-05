@@ -600,7 +600,60 @@ a:link {
   
   .pop-up__btn--container {
   display: flex;
+  margin-left: 5rem;
+}
+
+.pop-up__btn{
+  outline: none;
+  font-size: 1.7rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff6b00;
+  transition: all 0.3s;
+  padding: 1rem 2rem;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .pop-up__main {
+    flex-direction: column;
   }
+
+  .pop-up__project {
+    padding: 3rem 3rem;
+  }
+
+  .pop-up__paragraph {
+    font-size: 16px;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .pop-up__close--btn {
+    margin: 0;
+  }
+
+  .pop-up__btn--container {
+    justify-content: space-between;
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  .pop-up__btn{
+    font-size: 1.7rem;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .pop-up__first {
+    width: 100%;
+  }
+} 
 
 
 /*** About ***/
