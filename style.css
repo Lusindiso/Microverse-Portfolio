@@ -962,7 +962,7 @@ textarea:active {
 }
 
 .invalid {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "inter", serif;
   color: red;
   float: right;
   font-size: 14px;
