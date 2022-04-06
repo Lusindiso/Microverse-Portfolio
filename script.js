@@ -1,3 +1,13 @@
+const popUpModal = document.getElementById('popUpModal');
+const popUp = document.querySelectorAll('.popUp');
+const closePopUp = document.getElementById('closePopUp');
+const modal = document.getElementById('modal');
+const btn = document.getElementById('modal-btn');
+const closeModal = document.getElementById('closeModal');
+const modalLink = document.querySelectorAll('.modalLink');
+const form = document.querySelector('form');
+const invalid = document.querySelector('.invalid');
+
 const data = {
   project1: {
     title: 'Profesional Art Printing Data',
@@ -57,7 +67,6 @@ const story = {
   image: './img/portfolio.jpg',
 };
 
-/// //////
 const mainProjectsContainer = document.querySelector('.works');
 mainProjectsContainer.innerHTML = `<div class="works-stories">
 <div class="works-stories__heading--container">
@@ -109,20 +118,6 @@ ${data[key].text}
   }
 });
 
-/// ///
-
-const modal = document.getElementById('modal');
-
-const btn = document.getElementById('modal-btn');
-
-const closeModal = document.getElementById('closeModal');
-
-const modalLink = document.querySelectorAll('.modalLink');
-
-const form = document.querySelector('form');
-
-const invalid = document.querySelector('.invalid');
-
 btn.onclick = function () {
   modal.style.display = 'block';
 };
@@ -141,11 +136,7 @@ modalLink.forEach((element) => {
   };
 });
 
-/////// Popup window ///////
-
-const popUpModal = document.getElementById('popUpModal');
-const popUp = document.querySelectorAll('.popUp');
-const closePopUp = document.getElementById('closePopUp');
+/// //// Popup window ///////
 
 popUp.forEach((element) => {
   element.onclick = function (event) {
@@ -176,3 +167,18 @@ closePopUp.onclick = function (event) {
   }
 };
 
+const email = document.querySelector('.email');
+
+form.addEventListener('submit', (event) => {
+  const val = email.value;
+  if (val !== val.toLowerCase()) {
+    event.preventDefault();
+    invalid.style.display = 'block';
+  }
+});
+
+email.onclick = (e) => {
+  if (e.target) {
+    invalid.style.display = 'none';
+  }
+};

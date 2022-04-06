@@ -973,10 +973,10 @@ textarea:active {
   padding: 2.5px 5px;
   max-width: 41rem;
   display: none;
-  }
-  
-  .invalid i {
+}
+
+.invalid i {
   color: red;
   font-size: 1.8rem;
   padding: 2px 5px;
-  } 
+}
