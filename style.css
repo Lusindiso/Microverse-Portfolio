@@ -960,3 +960,23 @@ textarea:active {
     margin: 0 auto 12.4rem auto;
   }
 }
+
+.invalid {
+  font-family: "inter", serif;
+  color: red;
+  float: right;
+  font-size: 14px;
+  margin-top: -4rem;
+  margin-bottom: 2rem;
+  background-color: rgba(255, 0, 0, 0.25);
+  border: 1px solid red;
+  padding: 2.5px 5px;
+  max-width: 41rem;
+  display: none;
+}
+
+.invalid i {
+  color: red;
+  font-size: 1.8rem;
+  padding: 2px 5px;
+}

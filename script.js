@@ -1,3 +1,13 @@
+const popUpModal = document.getElementById('popUpModal');
+const popUp = document.querySelectorAll('.popUp');
+const closePopUp = document.getElementById('closePopUp');
+const modal = document.getElementById('modal');
+const btn = document.getElementById('modal-btn');
+const closeModal = document.getElementById('closeModal');
+const modalLink = document.querySelectorAll('.modalLink');
+const form = document.querySelector('form');
+const invalid = document.querySelector('.invalid');
+
 const data = {
   project1: {
     title: 'Profesional Art Printing Data',
@@ -42,9 +52,7 @@ const data = {
   project6: {
     title: 'Website Protfolio',
     text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    lang: ['<li class="pop-up__languages--item">html</li>',
-      '<li class="pop-up__languages--item">Bootstrap</li>',
-      '<li class="pop-up__languages--item">Ruby</li>'],
+    lang: '<li class="pop-up__languages--item">html</li><li class="pop-up__languages--item">Bootstrap</li><li class="pop-up__languages--item">Ruby</li>',
     image: './img/project6.jpg',
   },
 };
@@ -59,7 +67,6 @@ const story = {
   image: './img/portfolio.jpg',
 };
 
-/// //////
 const mainProjectsContainer = document.querySelector('.works');
 mainProjectsContainer.innerHTML = `<div class="works-stories">
 <div class="works-stories__heading--container">
@@ -111,16 +118,6 @@ ${data[key].text}
   }
 });
 
-/// ///
-
-const modal = document.getElementById('modal');
-
-const btn = document.getElementById('modal-btn');
-
-const closeModal = document.getElementById('closeModal');
-
-const modalLink = document.querySelectorAll('.modalLink');
-
 btn.onclick = function () {
   modal.style.display = 'block';
 };
@@ -140,10 +137,6 @@ modalLink.forEach((element) => {
 });
 
 /// //// Popup window ///////
-
-const popUpModal = document.getElementById('popUpModal');
-const popUp = document.querySelectorAll('.popUp');
-const closePopUp = document.getElementById('closePopUp');
 
 popUp.forEach((element) => {
   element.onclick = function (event) {
@@ -171,5 +164,21 @@ document.getElementById('popUp1').onclick = function (event) {
 closePopUp.onclick = function (event) {
   if (event.target) {
     popUpModal.style.display = 'none';
+  }
+};
+
+const email = document.querySelector('.email');
+
+form.addEventListener('submit', (event) => {
+  const val = email.value;
+  if (val !== val.toLowerCase()) {
+    event.preventDefault();
+    invalid.style.display = 'block';
+  }
+});
+
+email.onclick = (e) => {
+  if (e.target) {
+    invalid.style.display = 'none';
   }
 };
