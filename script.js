@@ -182,3 +182,9 @@ email.onclick = (e) => {
     invalid.style.display = 'none';
   }
 };
+
+// Local Storage
+const nameInput = document.querySelector('.name');
+const emailInput = document.querySelector('.email');
+const messageInput = document.querySelector('.message');
+
