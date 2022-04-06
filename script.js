@@ -42,9 +42,7 @@ const data = {
   project6: {
     title: 'Website Protfolio',
     text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    lang: ['<li class="pop-up__languages--item">html</li>',
-      '<li class="pop-up__languages--item">Bootstrap</li>',
-      '<li class="pop-up__languages--item">Ruby</li>'],
+    lang: '<li class="pop-up__languages--item">html</li><li class="pop-up__languages--item">Bootstrap</li><li class="pop-up__languages--item">Ruby</li>',
     image: './img/project6.jpg',
   },
 };
@@ -121,6 +119,10 @@ const closeModal = document.getElementById('closeModal');
 
 const modalLink = document.querySelectorAll('.modalLink');
 
+const form = document.querySelector('form');
+
+const invalid = document.querySelector('.invalid');
+
 btn.onclick = function () {
   modal.style.display = 'block';
 };
@@ -139,7 +141,7 @@ modalLink.forEach((element) => {
   };
 });
 
-/// //// Popup window ///////
+/////// Popup window ///////
 
 const popUpModal = document.getElementById('popUpModal');
 const popUp = document.querySelectorAll('.popUp');
@@ -173,3 +175,4 @@ closePopUp.onclick = function (event) {
     popUpModal.style.display = 'none';
   }
 };
+
