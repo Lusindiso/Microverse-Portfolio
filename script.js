@@ -203,15 +203,15 @@ const setData = () => {
 
 const localData = JSON.parse(localStorage.getItem('inputData'));
 const populateStorage = () => {
-nameInput.value = localData.nameInput;
-emailInput.value = localData.emailInput;
-messageInput.value = localData.messageInput;
+  nameInput.value = localData.nameInput;
+  emailInput.value = localData.emailInput;
+  messageInput.value = localData.messageInput;
 
-setData();
+  setData();
 };
 
 if (!localStorage.getItem('inputData')) {
-setData();
+  setData();
 } else {
-populateStorage();
-} 
+  populateStorage();
+}
