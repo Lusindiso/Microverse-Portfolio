@@ -188,3 +188,15 @@ const nameInput = document.querySelector('.name');
 const emailInput = document.querySelector('.email');
 const messageInput = document.querySelector('.message');
 
+const setData = () => {
+  form.addEventListener('keyup', () => {
+    const inputData = {
+      nameInput: nameInput.value,
+      emailInput: emailInput.value,
+      messageInput: messageInput.value,
+    };
+
+    const storeInput = JSON.stringify(inputData);
+    localStorage.setItem('inputData', storeInput);
+  });
+};
