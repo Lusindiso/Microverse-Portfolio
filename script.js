@@ -182,3 +182,36 @@ email.onclick = (e) => {
     invalid.style.display = 'none';
   }
 };
+
+// Local Storage
+const nameInput = document.querySelector('.name');
+const emailInput = document.querySelector('.email');
+const messageInput = document.querySelector('.message');
+
+const setData = () => {
+  form.addEventListener('keyup', () => {
+    const inputData = {
+      nameInput: nameInput.value,
+      emailInput: emailInput.value,
+      messageInput: messageInput.value,
+    };
+
+    const storeInput = JSON.stringify(inputData);
+    localStorage.setItem('inputData', storeInput);
+  });
+};
+
+const localData = JSON.parse(localStorage.getItem('inputData'));
+const populateStorage = () => {
+  nameInput.value = localData.nameInput;
+  emailInput.value = localData.emailInput;
+  messageInput.value = localData.messageInput;
+
+  setData();
+};
+
+if (!localStorage.getItem('inputData')) {
+  setData();
+} else {
+  populateStorage();
+}
