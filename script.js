@@ -59,7 +59,7 @@ const data = {
 
 const story = {
   title: 'Passover Festival',
-  text: "Passover, is a major Jewish holiday that celebrates the exodus of the Israelites from slavery in Egypt, which occurs on the 15th day of the Hebrew month of Nisan.",
+  text: 'Passover, is a major Jewish holiday that celebrates the exodus of the Israelites from slavery in Egypt, which occurs on the 15th day of the Hebrew month of Nisan.',
   lang: ['<li class="pop-up__languages--item">css</li>',
     '<li class="pop-up__languages--item">html</li>',
     '<li class="pop-up__languages--item">JavaScript</li>'],
