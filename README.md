@@ -26,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Lusindiso Ntanjana**
 
 - GitHub: [@Lusindiso](https://github.com/Lusindiso)
 - Twitter: [@LusindisoNt](https://twitter.com/LusindisoNt)
