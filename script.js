@@ -58,13 +58,12 @@ const data = {
 };
 
 const story = {
-  title: 'Multi-Post Stories',
-  text: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  title: 'Passover Festival',
+  text: 'Passover, is a major Jewish holiday that celebrates the exodus of the Israelites from slavery in Egypt, which occurs on the 15th day of the Hebrew month of Nisan.',
   lang: ['<li class="pop-up__languages--item">css</li>',
     '<li class="pop-up__languages--item">html</li>',
-    '<li class="pop-up__languages--item">bootstrap</li>',
-    '<li class="pop-up__languages--item">Ruby</li>'],
-  image: './img/portfolio.jpg',
+    '<li class="pop-up__languages--item">JavaScript</li>'],
+  image: './img/conf.png',
 };
 
 const mainProjectsContainer = document.querySelector('.works');
@@ -80,7 +79,7 @@ src=${story.image} alt=""/>
 </div>
 <div class="right">
 <div class="works-stories__story">
-<h3 class="works-stories__story--heading">Multi-Post Stories</h3>
+<h3 class="works-stories__story--heading">${story.title}</h3>
 <p class="works-stories__story--paragraph">${story.text}</p>
 </div>
 <ul class="works-stories__languages">
