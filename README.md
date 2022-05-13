@@ -1,6 +1,6 @@
 # Portfolio
 
-> This project represents my personal portfolio and will feature my personal informaton, and my most recent work and projects.
+> This project represents my personal portfolio and will feature my personal informaton, and my most recent work and projects. This project uses Javascript to display the list of projects dynamically and the modal for the mobile version.
 
 ![screenshot](./desktop_screenshot.png)
 
